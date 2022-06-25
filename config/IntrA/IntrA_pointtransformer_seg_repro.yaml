@@ -1,0 +1,48 @@
+DATA:
+  data_name: IntrA
+  data_root: data/IntrA/
+  sample_points: 512
+  use_uniform_sample: True
+  use_normals: True
+  classes: 2
+  fea_dim: 6
+  loop: 1
+
+MODEL:
+  npoints: 16
+  downsampling_ratio: 0.5
+
+TRAIN:
+  arch: IntrA_pointtransformer_seg_repro
+  use_xyz: True
+  sync_bn: False
+  folds: [0, 1, 2, 3, 4]
+  train_gpu: [0]
+  num_workers: 8  # data loader workers
+  batch_size_train: 8  # batch size for training
+  batch_size_val: 8  # batch size for validation during training, memory and speed tradeoff
+  base_lr: 0.001
+  epochs: 400
+  start_epoch: 0
+  momentum: 0.9
+  weight_decay: 0.0
+  drop_rate: 0.5
+  manual_seed: 666
+  print_freq: 1
+  save_freq: 1
+  save_path:
+  weight:  # path to initial weight (default: none)
+  weight_edge: 1
+  weight_contra: 0.2
+  weight_refine: 1
+  resume:  # path to latest checkpoint (default: none)
+  evaluate: True  # evaluate on validation set, extra gpu memory needed and small batch_size_val is recommend
+  eval_freq: 1
+  num_votes: 3
+  num_edge_neighbor: 4
+  temp: 1.0
+  n_neighbors: 8
+
+TEST:
+  test_points: 512
+  test_times: 10
