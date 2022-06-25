@@ -1,5 +1,3 @@
-# EPT-Net
-=======
 # Edge-oriented Point-cloud Transformer for 3D Intracranial Aneurysm Segmentation
 by [Yifan Liu](https://github.com/yifliu3)
 
