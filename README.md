@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # EPT-Net
 =======
 # Edge-oriented Point-cloud Transformer for 3D Intracranial Aneurysm Segmentation
@@ -71,4 +70,3 @@ If you find this work useful for your research, please cite our paper:
 ## 6. Acknowledgement
 This work is based on [point-transformer](https://github.com/POSTECH-CVLab/point-transformer).
 
->>>>>>> fc96c5d... initial commit
