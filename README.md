@@ -63,7 +63,14 @@ The trained models are provided in [Google Drive]()
 
 ## 5. Citation
 If you find this work useful for your research, please cite our paper:
-
+```
+@inproceedings{liu2022,
+  title={Edge-oriented Point-cloud Transformer for 3D Intracranial Aneurysm Segmentation},
+  author={Yifan Liu, Jie Liu and Yixuan Yuan},
+  booktitle= {MICCAI},
+  year={2022}
+}
+```
 
 ## 6. Acknowledgement
 This work is based on [point-transformer](https://github.com/POSTECH-CVLab/point-transformer).
