@@ -59,7 +59,7 @@ Test:
 Or you can use the bash scipt to run train.py and test.py sequentially:  
 `sh tool/ept.sh IntrA pointtransformer_seg_repro`  
 
-The trained models are provided in [Google Drive]()
+The trained models are provided in [Google Drive](https://drive.google.com/drive/folders/1wThn1dBmQk36-suSJOq5T8UJq3GPQ6QF?usp=sharing)
 
 ## 5. Citation
 If you find this work useful for your research, please cite our paper:
